@@ -5,21 +5,52 @@
     <title>Schpotiphy</title>
 
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'music/home.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'music/home_page.css' %}" />
 </head>
 <body>
     <div class="container">
-        <div class="top">
-            <h1>Schpotiphy</h1>
+
+        <div class="full">
+
+            <div class="nav">
+                <ul>
+                    <li><a class="active" href="{%  url 'music:home' %}">Schpotiphy</a></li>
+                    <li><a href="#news">Genre</a></li>
+                    <li><a href="#contact">Albums</a></li>
+                    <li><a href="#about">Playlists</a></li>
+                </ul>
+            </div>
+
+            <div class="top">
+                <h1>Schpotiphy</h1>
+            </div>
+
         </div>
+
         <div class="about">
+
             <h3>What is Schpotiphy?</h3>
-            <div class="first_q">
-                <h4>Music</h4>
-                <p>On Schpotiphy you can listen to our royalfree songs for free. Listen anywhere and anytime</p>
+
+            <div class="q">
+                <div class="first_q">
+                    <h4>Music</h4>
+                    <p>On Schpotiphy you can listen to our royalfree songs for free. Anywhere and anytime</p>
+                </div>
+
+                <div class="second_q">
+                    <h4>Playlist</h4>
+                    <p>Create your own playlists and listen to them anywhere.</p>
+                </div>
             </div>
         </div>
-    </div>
 
+        <div class="img">
+            <p><br /></p>
+        </div>
+
+        <div class="footer">
+            <p>Copyright  (C) Schpotiphy</p>
+        </div>
+    </div>
 </body>
 </html>

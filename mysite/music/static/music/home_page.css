@@ -2,3 +2,111 @@
 	margin: 0;
 	padding: 0;
 }
+
+.container {
+	height: 100%;
+}
+
+.full {
+	clear: both;
+	height: 100vh;
+	background-image: url("https://static.pexels.com/photos/1591/technology-music-sound-things.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.top {
+	line-height: 100vh;
+	position: static;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 5px; 
+}
+
+.top h1 {
+	font-style: oblique;
+	font-size: 6em;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	color: #FFF;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(243, 243, 243, 0.2);
+	width: 100%;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: #320b16;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+	color: black;
+    background-color: #ddd;
+}
+
+.nav li a.active {
+    color: white;
+    background-color: #320b1c;
+}
+
+.about {
+	height: 15.5em;
+	background-color: #320b12;
+	color: white;
+}
+
+.about h3 {
+	padding: 7px 10px;
+	word-spacing: 0.3em;
+	letter-spacing: 0.3 em;
+	font-size: 2.8em;
+}
+
+.about h4 {
+	padding: 6px 10px;
+	word-spacing: 0.2em;
+	letter-spacing: 0.1em;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.about p {
+	word-spacing: 0.1em;
+	letter-spacing: 0.05em;
+	padding: 4px 10px;
+	font-size: 1.1em;
+}
+
+.img {
+	clear: both;
+	height: 97vh;
+	background-image: url("https://static.pexels.com/photos/374777/pexels-photo-374777.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.footer {
+	clear: both;
+	color: white;
+	background-color: #320b1c;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
