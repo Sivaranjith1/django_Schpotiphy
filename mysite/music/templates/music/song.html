@@ -1,0 +1,13 @@
+{% extends 'music/top.html' %}
+
+{% block body %}
+<div class="gl-back">
+    <p><br /></p>
+    <div class="player">
+        <h3>{{ sang.song_name }}</h3>
+        <p>from {{ sang.album }}</p>
+        {{ sang.link | safe }}
+    </div>
+    <p><br /></p>
+</div>
+{% endblock %}

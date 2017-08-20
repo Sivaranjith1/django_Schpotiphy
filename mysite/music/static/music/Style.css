@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(243, 243, 243, 1);
+	width: 100%;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: #320b16;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+	color: black;
+    background-color: #ddd;
+}
+
+.nav li a.active {
+    color: white;
+    background-color: #320b1c;
+}
+
+.sjanger_list li {
+	display: block;
+	color: white;
+    background-color: #320b16;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.sjanger_list li a {
+	display: block;
+	color: white;
+    background-color: #320b16;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.sjanger_list {
+	display: block;
+	position: relative;
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    margin-top: 25%
+}
+
+.sjanger_list ul {
+    list-style-type: none;
+}
+
+.sjanger_list li a:hover {
+    color: #320b1c;
+    background-color: white;
+}
+
+.sjanger_back {
+	height: 100vh;
+	background: url("https://static.pexels.com/photos/375751/pexels-photo-375751.jpeg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.gl-back {
+	height: 100vh;
+	background: url("https://static.pexels.com/photos/387/man-person-wall-music.jpg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.player{
+	text-align: center;
+	color: white;
+	background-color: #320b1c;
+	display: block;
+	position: relative;
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    margin-top: 25%
+}
+
+.player h3 {
+	font-size: 2em;
+}
+
+.player p {
+	font-size: 1.2em;
+}
+
+.footer {
+	clear: both;
+	color: white;
+	background-color: #320b1c;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

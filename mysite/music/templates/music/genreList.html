@@ -1,0 +1,20 @@
+{% extends 'music/top.html' %}
+
+{% block body %}
+<div class="gl-back">
+    <p><br /></p>
+    <div class="sjanger_list">
+
+        <ul>
+            <li><h3>{{ sjanger }}</h3></li>
+            {% for sanger in sang %}
+                {% if sanger.genre == sjanger %}
+                <li><a href="{% url 'music:sangen' sanger.id %}">{{ sanger.song_name }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+    <p><br /></p>
+</div>
+{% endblock %}

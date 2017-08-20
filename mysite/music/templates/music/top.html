@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schpotiphy-{% block title %}{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'music/Style.css' %}" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="{%  url 'music:home' %}">Schpotiphy</a></li>
+                <li><a href="{%  url 'music:genre' %}">Genre</a></li>
+                <li><a href="#contact">Albums</a></li>
+                <li><a href="#about">Playlists</a></li>
+            </ul>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+
+        <div class="footer">
+            <p><br />Copyright  (C) Schpotiphy<br /></p>
+        </div>
+    </div>
+</body>
+</html>

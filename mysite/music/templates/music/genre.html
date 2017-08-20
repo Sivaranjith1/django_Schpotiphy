@@ -1,0 +1,27 @@
+{% extends 'music/top.html' %}
+
+{% block title %}Genre{% endblock %}
+
+{% block body %}
+<div class="sjanger_back">
+    <p><br  /></p>
+        <div class="sjanger_list">
+
+    {% if genre %}
+
+
+            <ul>
+
+                {% for sjanger in genre %}
+                <li><a href="{% url 'music:genreView' sjanger.id %}"> {{ sjanger }} </a></li>
+                {% endfor %}
+
+            </ul>
+
+    {% else %}
+        <p>No genres</p>
+    {% endif %}
+        </div>
+</div>
+
+{% endblock %}
