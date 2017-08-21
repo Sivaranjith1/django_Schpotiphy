@@ -24,3 +24,15 @@ def genreView(request, sjanger_id):
 def play(request, sang_id):
     sang = get_object_or_404(Song, pk=sang_id)
     return render(request, 'music/song.html', {'sang':sang})
+
+class AlbumList(generic.ListView):
+    template_name = 'music/album.html'
+    context_object_name = 'album'
+
+    def get_queryset(self):
+        return Album.objects.order_by('title')
+
+def albumView(request, album_id):
+    album = get_object_or_404(Album, pk=album_id)
+    sang = get_list_or_404(Song)
+    return render(request, 'music/albumList.html', {'album': album, 'sang': sang})

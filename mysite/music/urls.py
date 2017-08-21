@@ -7,6 +7,8 @@ urlpatterns = [
                 url(r'^genre/$', views.GenreList.as_view(),
                     name='genre'),
                 url(r'^genre/(?P<sjanger_id>[0-9]+)/', views.genreView, name='genreView'),
-                url(r'^songs/(?P<sang_id>[0-9]+)/', views.play, name='sangen')
-      
-            ]
+                url(r'^songs/(?P<sang_id>[0-9]+)/', views.play, name='sangen'),
+                url(r'album/$', views.AlbumList.as_view(), name='album'),
+                url(r'^album/(?P<album_id>[0-9]+)/', views.albumView, name='albumView'),
+
+                ]

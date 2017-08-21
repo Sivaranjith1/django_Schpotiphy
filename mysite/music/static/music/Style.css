@@ -58,7 +58,8 @@
     width: 85%;
     height: 70%;
     margin: auto;
-    margin-top: 25%
+    margin-top: 25%;
+	padding-bottom: 25%;
 }
 
 .sjanger_list ul {
@@ -71,17 +72,19 @@
 }
 
 .sjanger_back {
-	height: 100vh;
+	min-height: 100vh;
 	background: url("https://static.pexels.com/photos/375751/pexels-photo-375751.jpeg") no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	clear: both;
 }
 
 .gl-back {
-	height: 100vh;
+	min-height: 100vh;
 	background: url("https://static.pexels.com/photos/387/man-person-wall-music.jpg") no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	clear: both;
 }
 
 .player{
@@ -104,13 +107,22 @@
 	font-size: 1.2em;
 }
 
+.album_back {
+	min-height: 100vh;
+	background: url("https://static.pexels.com/photos/77414/nostalgy-collector-theme-good-morning-retro-old-technology-77414.jpeg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	clear: both;
+}
+
 .footer {
 	clear: both;
 	color: white;
 	background-color: #320b1c;
 	text-align: center;
 	width: 100%;
-	position: relative;
+	position: absolute;
+	float: left;
 }
 
 

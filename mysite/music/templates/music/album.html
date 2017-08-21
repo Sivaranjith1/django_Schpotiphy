@@ -1,0 +1,26 @@
+{% extends 'music/top.html' %}
+
+{% block title %}Albums{% endblock %}
+
+{% block body %}
+<div class="album_back">
+    <p><br  /></p>
+        <div class="sjanger_list">
+
+    {% if album %}
+
+
+            <ul>
+
+                {% for sjanger in album %}
+                <li><a href="{% url 'music:albumView' sjanger.id %}"> {{ sjanger.title }} </a></li>
+                {% endfor %}
+
+            </ul>
+
+    {% else %}
+        <p>No albums</p>
+    {% endif %}
+        </div>
+</div>
+{% endblock %}
